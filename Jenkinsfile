@@ -1,3 +1,4 @@
+```groovy
 pipeline {
 
     agent any
@@ -12,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git branch: 'main',
-                url: 'https://github.com/siddhi3022/p555.git'
+                    url: 'https://github.com/siddhi3022/p555.git'
             }
         }
 
@@ -33,7 +34,6 @@ pipeline {
                 }
             }
         }
-
     }
 
     post {
@@ -46,4 +46,4 @@ pipeline {
         }
     }
 }
-
+```
